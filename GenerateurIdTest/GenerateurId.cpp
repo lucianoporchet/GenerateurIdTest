@@ -104,7 +104,8 @@ void GenerateurId::rendre(value_type id) {
 	p->rendre(id);
 }
 
-
+GenerateurId::GenerateurId(GenerateurId&&) = default;
+GenerateurId& GenerateurId::operator=(GenerateurId&&) = default;
 
 
 /*GenerateurId(sorte_gen sorte) {

@@ -26,6 +26,8 @@ public:
 	GenerateurId(sequentiel_t);
 	GenerateurId(recycleur_t);
 	GenerateurId(aleatoire_t);
+	GenerateurId(GenerateurId&&);
+	GenerateurId& operator=(GenerateurId&&);
 
 	/*GenerateurId(sorte_gen sorte) {
 		switch (sorte)
